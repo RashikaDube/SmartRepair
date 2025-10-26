@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24408" systemVersion="25A362" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="RepairRecord" representedClassName="RepairRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="confidence" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String"/>
+        <attribute name="diyFriendly" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="estimatedCost" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary"/>
+        <attribute name="problemType" optional="YES" attributeType="String"/>
+        <attribute name="recommendedAction" optional="YES" attributeType="String"/>
+        <attribute name="urgency" optional="YES" attributeType="String"/>
+    </entity>
+</model>

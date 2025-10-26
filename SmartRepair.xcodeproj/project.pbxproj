@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92B701F82EADEE63004984CE /* FoundationModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B701F72EADEE63004984CE /* FoundationModels.framework */; };
+		92B701FA2EADF1E8004984CE /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B701F92EADF1E8004984CE /* MobileNetV2.mlmodel */; };
+		92B702052EAE0792004984CE /* SmartRepairModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92B702032EAE0792004984CE /* SmartRepairModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		92B7016D2EABC882004984CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +33,12 @@
 		92B7015D2EABC880004984CE /* SmartRepair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRepair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B7016C2EABC882004984CE /* SmartRepairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartRepairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B701762EABC883004984CE /* SmartRepairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartRepairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B701F72EADEE63004984CE /* FoundationModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoundationModels.framework; path = System/Library/Frameworks/FoundationModels.framework; sourceTree = SDKROOT; };
+		92B701F92EADF1E8004984CE /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		92B702042EAE0792004984CE /* SmartRepairModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartRepairModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		92B7015F2EABC880004984CE /* SmartRepair */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SmartRepair;
-			sourceTree = "<group>";
-		};
 		92B7016F2EABC882004984CE /* SmartRepairTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SmartRepairTests;
@@ -45,6 +49,31 @@
 			path = SmartRepairUITests;
 			sourceTree = "<group>";
 		};
+		92B701BC2EABCDAE004984CE /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92B701D32EABCDB3004984CE /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		92B701DF2EABCDB7004984CE /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		92B701E52EABCDBA004984CE /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92B701EA2EABCDBC004984CE /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B701F82EADEE63004984CE /* FoundationModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +105,15 @@
 		92B701542EABC880004984CE = {
 			isa = PBXGroup;
 			children = (
-				92B7015F2EABC880004984CE /* SmartRepair */,
+				92B702032EAE0792004984CE /* SmartRepairModel.xcdatamodeld */,
+				92B701BC2EABCDAE004984CE /* Resources */,
+				92B701D32EABCDB3004984CE /* Features */,
+				92B701DF2EABCDB7004984CE /* ViewModels */,
+				92B701E52EABCDBA004984CE /* Models */,
+				92B701EA2EABCDBC004984CE /* App */,
 				92B7016F2EABC882004984CE /* SmartRepairTests */,
 				92B701792EABC883004984CE /* SmartRepairUITests */,
+				92B701F62EADEE62004984CE /* Frameworks */,
 				92B7015E2EABC880004984CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +126,15 @@
 				92B701762EABC883004984CE /* SmartRepairUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		92B701F62EADEE62004984CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92B701F92EADF1E8004984CE /* MobileNetV2.mlmodel */,
+				92B701F72EADEE63004984CE /* FoundationModels.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +153,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				92B7015F2EABC880004984CE /* SmartRepair */,
+				92B701BC2EABCDAE004984CE /* Resources */,
+				92B701D32EABCDB3004984CE /* Features */,
+				92B701DF2EABCDB7004984CE /* ViewModels */,
+				92B701E52EABCDBA004984CE /* Models */,
+				92B701EA2EABCDBC004984CE /* App */,
 			);
 			name = SmartRepair;
 			packageProductDependencies = (
@@ -236,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B702052EAE0792004984CE /* SmartRepairModel.xcdatamodeld in Sources */,
+				92B701FA2EADF1E8004984CE /* MobileNetV2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -380,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -400,11 +451,14 @@
 				DEVELOPMENT_TEAM = DFYSZXTGF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,11 +486,14 @@
 				DEVELOPMENT_TEAM = DFYSZXTGF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +635,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92B702032EAE0792004984CE /* SmartRepairModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92B702042EAE0792004984CE /* SmartRepairModel.xcdatamodel */,
+			);
+			currentVersion = 92B702042EAE0792004984CE /* SmartRepairModel.xcdatamodel */;
+			path = SmartRepairModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 92B701552EABC880004984CE /* Project object */;
 }
